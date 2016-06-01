@@ -1,0 +1,77 @@
+\documentclass[margin,line]{res}
+\usepackage{verbatim}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\begin{document}
+
+%\name{Bruce Wayne - bruce@gotham.com\vspace*{.1in}}
+\name{Bruce Wayne\vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact}
+\begin{tabular}{@{}p{2in}p{4in}}
+bruce@gotham.com \\
+(888) 123-3333 & github.com/batman \\
+
+\end{tabular}
+
+\section{\sc Summary}
+ Full stack developer skilled in JavaScript, seeking new opportunities to advance my technical skills
+
+\section{\sc Skills}
+{\bf Back-End:} Ruby on Rails, PostgreSQL, MongoDB, Firebase, SQL \\
+{\bf Front-End:} AngularJS, D3, Bootstrap, jQuery, HTML5, CSS3 \\
+{\bf Languages:} Ruby, JavaScript, Swift \\
+{\bf Testing:} RSpec
+
+\section{\sc Projects}
+{\bf Lazy Lock}
+\vspace{0.2cm}
+
+\begin{list2}
+\item Built a front end iOS app in Swift that lets users check if their door is locked
+\item Implemented a pull to refresh to allow users to continually check their lock status
+\item Connected iOS app to SparkIO's REST API, to check pressure status on the Lazy Lock device
+\end{list2}
+
+\section{\sc Experience}
+{\bf General Assembly} \hfill{Santa Monica, CA} \\
+{\em Teaching Assistant} \hfill{March 2015 - Present} \\
+\vspace{-0.3cm}
+
+\begin{list2}
+\item Tutored students in Javascript, Ruby, AngularJS, Ruby on Rails, and best practices
+\item Assisted students with personal projects, wireframing, and pseudo coding
+\end{list2}
+
+\section{\sc Education}
+{\bf University of California, Irvine} \hfill{Irvine, CA} \\
+\vspace{-0.3cm}
+B.A. Literary Journalism \hfill{2011} \\
+\vspace{-0.3cm}
+
+{\bf General Assembly} \hfill{Santa Monica, CA} \\
+\vspace{-0.3cm}
+Web Development Immersive \hfill{2015} \\
+\vspace{-0.3cm}
+
+\end{resume}
+\end{document}
